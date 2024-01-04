@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ months_name | title }} Challange</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block page_title %}
+    {{ months_name | title }} Challange
+{% endblock %}
+
+{% block content%}
+    {% include "challenges/includes/header.html" %}
+
     <h1>{{ months_name | title }} challenge</h1>
     <h2>{{ text }}</h2>
-</body>
-</html>
+{% endblock%}
